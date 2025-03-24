@@ -19,10 +19,8 @@ import javax.crypto.SecretKey;
 @Component
 public class JwtUtil {
 
-//	SecretKey SECRET_KEY = Keys.secretKeyFor(SignatureAlgorithm.HS256);
-//	Key SECRET_KEY = Keys.secretKeyFor(SignatureAlgorithm.HS256);
-	
-	String secret = "mySecretKeymySecretKeymySecretKey"; // Must be at least 256-bit (32 chars)
+
+	String secret = "ThisIsSecretKeyThisIsSecretKeyThisIsSecretKey"; // 
 	Key SECRET_KEY = Keys.hmacShaKeyFor(secret.getBytes());
 
     public String extractUsername(String token) {

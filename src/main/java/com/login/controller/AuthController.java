@@ -33,7 +33,7 @@ public class AuthController {
         } catch (BadCredentialsException e) {
             throw new InvalidCredentialsException("Invalid credentials");
         }
-        final String jwt = jwtUtil.generateToken(authRequest.getUsername());
-        return ResponseEntity.ok(new AuthResponse(jwt));
+        final String token = jwtUtil.generateToken(authRequest.getUsername());
+        return ResponseEntity.ok(new AuthResponse(token));
     }
 }
