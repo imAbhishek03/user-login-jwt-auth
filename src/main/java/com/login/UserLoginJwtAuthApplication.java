@@ -12,7 +12,7 @@ public class UserLoginJwtAuthApplication {
 		
 		/*
 		 * this for testing purpose I was printing the password in console and putt in
-		 * to the table
+		 * to the Usermaster table
 		 */
 		
 		PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
